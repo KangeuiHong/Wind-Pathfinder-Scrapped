@@ -1,0 +1,148 @@
+TAP version 13
+# Subtest: actual National HTML initializes only the original v0.10 expression, 638 stations and 61 history frames
+ok 1 - actual National HTML initializes only the original v0.10 expression, 638 stations and 61 history frames
+  ---
+  duration_ms: 898.413023
+  type: 'test'
+  ...
+# Subtest: every raw speed and FROM survives all 638 stations × 61 frames × both source means
+ok 2 - every raw speed and FROM survives all 638 stations × 61 frames × both source means
+  ---
+  duration_ms: 1571.843293
+  type: 'test'
+  ...
+# Subtest: dates and stored endpoints are actual National KST observations, distinct from Station data
+ok 3 - dates and stored endpoints are actual National KST observations, distinct from Station data
+  ---
+  duration_ms: 492.173867
+  type: 'test'
+  ...
+# Subtest: hover and selected panel expose unrounded current raw speed, FROM and converted TO
+ok 4 - hover and selected panel expose unrounded current raw speed, FROM and converted TO
+  ---
+  duration_ms: 804.2932
+  type: 'test'
+  ...
+# Subtest: search includes hidden overview stations and both complete ASOS/AWS networks
+ok 5 - search includes hidden overview stations and both complete ASOS/AWS networks
+  ---
+  duration_ms: 529.871219
+  type: 'test'
+  ...
+# Subtest: overview geographic membership is stable across means, times, labels, scale and viewport resize
+ok 6 - overview geographic membership is stable across means, times, labels, scale and viewport resize
+  ---
+  duration_ms: 570.370693
+  type: 'test'
+  ...
+# Subtest: zoom reveals all 638 at 4× and resets to overview; pan is bounded and preserves raw values
+ok 7 - zoom reveals all 638 at 4× and resets to overview; pan is bounded and preserves raw values
+  ---
+  duration_ms: 624.168087
+  type: 'test'
+  ...
+# Subtest: seek, previous and next pause both clocks and clamp at exact stored endpoints
+ok 8 - seek, previous and next pause both clocks and clamp at exact stored endpoints
+  ---
+  duration_ms: 567.49033
+  type: 'test'
+  ...
+# Subtest: primary play, pause, rate change, replay restart and final frame stop both clocks
+ok 9 - primary play, pause, rate change, replay restart and final frame stop both clocks
+  ---
+  duration_ms: 581.212075
+  type: 'test'
+  ...
+# Subtest: fixed-time current motion changes only phase; discrete observed turns do not interpolate or keep paths
+ok 10 - fixed-time current motion changes only phase; discrete observed turns do not interpolate or keep paths
+  ---
+  duration_ms: 514.296167
+  type: 'test'
+  ...
+# Subtest: hidden-document time is excluded and restored without skipping stored observations
+ok 11 - hidden-document time is excluded and restored without skipping stored observations
+  ---
+  duration_ms: 570.79952
+  type: 'test'
+  ...
+# Subtest: real missing-speed, missing-direction and calm observations draw no fabricated direction or moving glyph
+ok 12 - real missing-speed, missing-direction and calm observations draw no fabricated direction or moving glyph
+  ---
+  duration_ms: 550.380965
+  type: 'test'
+  ...
+# Subtest: actual 0.1 m/s observations retain exact fractional length and the original four-second phase
+ok 13 - actual 0.1 m/s observations retain exact fractional length and the original four-second phase
+  ---
+  duration_ms: 593.35025
+  type: 'test'
+  ...
+# Subtest: wind toggle, reduced motion and missing Canvas retain all selectable raw observations
+ok 14 - wind toggle, reduced motion and missing Canvas retain all selectable raw observations
+  ---
+  duration_ms: 1037.182921
+  type: 'test'
+  ...
+# Subtest: boundary selection, keyboard station navigation and help work without optional removed UI
+ok 15 - boundary selection, keyboard station navigation and help work without optional removed UI
+  ---
+  duration_ms: 554.555224
+  type: 'test'
+  ...
+# Subtest: original v0.10 renderer supplies full quantitative bars and no C renderer is loaded
+ok 16 - original v0.10 renderer supplies full quantitative bars and no C renderer is loaded
+  ---
+  duration_ms: 956.53428
+  type: 'test'
+  ...
+# Subtest: moving v0.10 bars use the unchanged passage geometry, station phase and TO rotation
+ok 17 - moving v0.10 bars use the unchanged passage geometry, station phase and TO rotation
+  ---
+  duration_ms: 599.111228
+  type: 'test'
+  ...
+# Subtest: geographic coverage stays aligned for original bars, station markers and selected exceptions
+ok 18 - geographic coverage stays aligned for original bars, station markers and selected exceptions
+  ---
+  duration_ms: 601.803706
+  type: 'test'
+  ...
+# Subtest: quantitative legend and the existing geographic north/scale survive zoom, resize and symbol size
+ok 19 - quantitative legend and the existing geographic north/scale survive zoom, resize and symbol size
+  ---
+  duration_ms: 604.348515
+  type: 'test'
+  ...
+# Subtest: all 18 v0.11.1 preserved model, renderer, map and history bytes retain their source SHA-256
+ok 20 - all 18 v0.11.1 preserved model, renderer, map and history bytes retain their source SHA-256
+  ---
+  duration_ms: 42.739289
+  type: 'test'
+  ...
+# Subtest: National JSON, offline JS and CSV are one exact 638-station, 61-frame source dataset
+ok 21 - National JSON, offline JS and CSV are one exact 638-station, 61-frame source dataset
+  ---
+  duration_ms: 421.130458
+  type: 'test'
+  ...
+# Subtest: all live page scripts, stylesheets, local links and CSS imports/URLs exist without remote runtime dependencies
+ok 22 - all live page scripts, stylesheets, local links and CSS imports/URLs exist without remote runtime dependencies
+  ---
+  duration_ms: 1.754826
+  type: 'test'
+  ...
+# Subtest: only history-backed wind controls are present and live navigation names all three canonical views
+ok 23 - only history-backed wind controls are present and live navigation names all three canonical views
+  ---
+  duration_ms: 0.688392
+  type: 'test'
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 10668.478049

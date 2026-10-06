@@ -1,0 +1,23 @@
+{
+  "source": "v0.11.1 corrected C, 2026-10-03 national observations",
+  "files": {
+    "map-data.js": "bbbdfb1c50ba9f5ea3802338786d702013087d115a7ba3d9b9e308c193980300",
+    "core.js": "fbe3c7b9c2cb82804f804fbe3b041aa20dfb6dbb12f259fbe1e5409cf26909cc",
+    "admin-data.js": "9dee540b9fec9eea39ff23dc268f9cc526a25fe2495ca520f7decdceb4517b98",
+    "admin-core.js": "c9c98ad11f47abc53168b2bfda71cd7771ea009628e86d5e45e584374ae30548",
+    "observations-core.js": "e14b37965a4c2e309c5bf2c077819ce9fb5897cbcf5ea89e346f47e8c564eb58",
+    "dataset-core.js": "410d051ca584f03bc4d7606a136fa21a2c0683ee31a95c5627d9acf5b7eedbd8",
+    "sample-clock.js": "3d1349707e63b681f30f1366072f135864b5f8934af78b7b635b3667a10e41b0",
+    "history-data.js": "b6c13ea3abe9f1fa9dbf1fec3c27dcea7a0519b2f7069588560e15c504e1f749",
+    "passage-model.js": "f8922ce7f50777a1be198bb5307d41ba11c400be786cb796a157139f79119c21",
+    "cohort-model.js": "e05588c3521d910008ecbbaa4820d34a2626c52130d14496b5e2b9bb6c62a1b4",
+    "legacy-renderer.js": "2e3ef34043cb18bba761142a2651383849096da7fdfe81700b33f4764f481f37",
+    "flow-model.js": "700b68cf9994fa1184bc78ced9ca9c1ab878b8cb37f9f8df989cbdeb7aa82867",
+    "particle-renderer.js": "75bd5d887d033dad3a47d91a8537c20221259413d70062be4abd76fa039e46ff",
+    "screen-layout.js": "83b22fd1a674301a26734403aaf1d468bde22cf73d60e2c12c6edf310a1af0f0",
+    "data/history-20261003.json": "dc96cfd1b6a8649c6414b4927e3e9b93bd1b6124cd914f2d3b596c1236cebfed",
+    "data/history-20261003.csv": "be3880401098fb4dd025c4eb78dea1e20717e6b47c1d17bbb7147b73c4b6f41a",
+    "data/history-source-manifest.json": "beb2b5e4e25bced1082bfe45f7f4e1a2caf22467f2f0a4defc51746be6f0eb1c",
+    "data/history-source-validation.json": "9bc02c95953592b9c4a2e17f480e3d6786c36a962c622be2d8ca1ce4f932115b"
+  }
+}

@@ -1,0 +1,60 @@
+/* Current comparison shell. Original v0.10 glyph geometry lives in legacy-renderer.js. */
+:root{--paper:#f4f6f1;--ink:#243e32;--muted:#65796b;--line:#dce4dd}
+body{background:var(--paper);color:var(--ink)}
+.app{max-width:1440px;padding:0 32px 20px}
+a{color:inherit}a:focus-visible,summary:focus-visible{outline:3px solid #ca914e;outline-offset:3px}
+.header{min-height:86px;border-bottom:1px solid var(--line);margin:0 0 26px;gap:20px;flex-wrap:wrap}
+.home-brand{text-decoration:none;font-size:23px;font-weight:800;white-space:nowrap}
+.home-brand small{font-size:10px;letter-spacing:1.5px;color:var(--muted);margin-left:8px}
+.page-nav{display:flex;gap:4px;background:#eaf0e8;padding:4px;border-radius:10px}
+.page-nav a{text-align:center;text-decoration:none;font-size:12px;padding:10px 15px;border-radius:7px;color:#375540;white-space:nowrap}
+.page-nav a[aria-current]{background:#fff;box-shadow:0 1px 4px #254b4020;font-weight:700}
+.national-intro{margin-bottom:20px}
+.national-kicker{font-size:10px;letter-spacing:2px;color:#718773;font-weight:700;margin:0 0 8px}
+.national-intro h1{font-size:32px;line-height:1.35;color:var(--ink);letter-spacing:-1px}
+.national-intro>p:not(.national-kicker){font-size:16px;color:#536d5a;line-height:1.65;margin:8px 0 18px}
+.dataset-notice{padding:14px 18px;border:1px solid #d7e1d5;background:#ecf1e7;border-radius:10px;font-size:12px;line-height:1.65}
+.dataset-notice strong{font-size:13px;margin-right:18px}.dataset-notice span{color:#667b6a}
+.dataset-notice p{margin:5px 0 0;color:#5a705e;font-size:11px}
+.data-banner{background:#f8faf5;border-color:var(--line);color:#566e5e}.badge{background:#47745b}
+main{gap:20px;grid-template-columns:minmax(0,1fr) 302px}
+.map-card,.side-panel{border:1px solid var(--line);box-shadow:none}
+.boundary-toolbar{background:#eef3ed;color:#506b59;border-color:var(--line);padding:10px 14px;gap:8px}
+.boundary-tabs button{background:#e2eae0;color:#4f695a}.boundary-tabs button[aria-pressed=true]{background:#315e48;color:#fff}
+.boundary-toolbar select{background:#fff;color:#455f4e;border-color:#cfdaca}
+.boundary-toolbar label[for=label-mode],#boundary-vintage{color:#667b6b}
+.map-card .time-workspace{padding:14px 16px 12px;background:#fff;border-color:var(--line);color:var(--ink)}
+.data-options{position:static;font-size:11px}
+.time-top{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px 20px}
+.dataset-choice{grid-column:1/-1}.dataset-choice #source-credit{font-size:10px;color:#6c806f;font-weight:400}
+.observation-time .section-kicker{font-size:10px;color:#687e6d}.clock{gap:10px}.clock>span:first-child{font-size:28px;color:#2d4e37}
+.clock>span:last-child{font-size:9px;color:#758878;border-color:var(--line)}
+.mean-choice{min-width:0;display:grid;gap:4px}.mean-choice label{font-size:10px;color:#687e6d}
+.mean-choice select{font-size:12px;padding:7px 10px;border:1px solid #d1dcca;background:#fbfcf8;color:#35523e;border-radius:7px}
+.mean-choice p{margin:0;font-size:9px;color:#758878}
+.time-navigation{padding:12px 0 0;gap:7px;flex-wrap:wrap}
+.time-navigation button{padding:7px 10px;font-size:11px;border-radius:6px;background:#edf3e9;color:#35583f}
+.time-navigation #time-play{background:#315e48;color:#fff}
+.time-navigation #time-position{color:#6b816e;font-size:10px}
+.time-navigation label{font-size:10px;color:#708371}
+.time-navigation select{background:#fafcf7;color:#42664b;border:1px solid #d7e1d2;padding:6px;border-radius:5px}
+.map-card .replay-note{display:block;color:#7a887a;font-size:9px;margin:8px 0 0}
+.time-range{gap:10px;flex-wrap:wrap;color:#6c7e6e;font-size:9px}
+.map-bottom{background:#eaf1e7;color:#667c6a;border-color:#d9e2d3;flex-wrap:wrap;font-size:10px}.map-bottom strong{color:#385840}
+.station-hover,.region-readout,.display-count{background:#f5f8f1;color:#516c57;border-color:var(--line);font-size:11px;line-height:1.65}
+.flow-key{max-width:285px}.flow-key p{font-size:9px;line-height:1.6}.map-credit{font-size:8px}
+.layer-panel summary{font-size:12px;color:#3f6049;cursor:pointer}.layer-panel p{font-size:10px;color:#657c69}
+.scale-hint{font-size:9px;color:#7a8e7c}.station-picker .section-kicker{font-size:11px}
+.station-choice{font-size:11px}.station-choice strong{font-size:11px}
+footer{font-size:10px;color:#71836f;line-height:1.7;padding:15px 0;border-top:1px solid var(--line);margin-top:24px;gap:16px}
+.text-button{font-size:11px;color:#587359}.help-panel{color:#5a725e;font-size:12px;line-height:1.8}
+@media(max-width:1000px){.app{padding:0 20px 16px}main{grid-template-columns:minmax(0,1fr) 270px}.header{gap:12px}.home-brand small{display:none}.page-nav a{padding:9px 12px}}
+@media(max-width:760px){.app{padding:0 14px 16px}.header{padding:14px 0;margin-bottom:22px;min-height:0}.home-brand{font-size:21px}.page-nav{margin-left:auto}.page-nav a{padding:8px 10px;font-size:11px}.national-intro h1{font-size:27px}.national-intro>p:not(.national-kicker){font-size:14px}.dataset-notice strong,.dataset-notice span{display:block}.dataset-notice p{margin-top:8px}.time-top{gap:8px 12px}.clock{display:block}.clock>span:last-child{display:block;padding:0;border:0;margin-top:3px}.time-navigation{padding-top:12px}.time-navigation label{margin-left:0}.map-card .time-workspace{padding:12px}.boundary-toolbar{padding:10px;gap:7px}.boundary-toolbar label[for=label-mode]{font-size:9px}.flow-key{max-width:250px}.flow-key p{font-size:8px}.map-credit{font-size:7px}.side-panel{display:flex}.station-detail{border-right:0}.detail-grid{display:grid;grid-template-columns:1fr 1fr}.detail-grid>div{display:flex;flex-direction:column;align-items:flex-start}.station-picker{padding:18px}#station-list{max-height:210px}.station-picker .section-kicker span{display:inline}.station-choice{padding:8px;font-size:12px}.station-choice strong{font-size:12px}.layer-panel{border-top:1px solid var(--line);padding:18px}.layer-panel p{font-size:11px}.map-bottom{font-size:9px}.map-bottom>span:last-child{display:block}footer{align-items:flex-start;flex-wrap:wrap}footer>span{max-width:none}}
+@media(max-width:470px){.header{align-items:flex-start}.page-nav{margin:0;width:100%}.page-nav a{flex:1}.national-intro h1{font-size:25px}.map-heading h2{font-size:18px}.map-heading p{max-width:180px}.map-live span{font-size:7px}.map-live small{font-size:8px}.motion-controls{gap:7px}.motion-controls>span{font-size:7px}.motion-controls button{font-size:8px}.flow-key{bottom:38px;max-width:245px}.map-credit{bottom:7px;max-width:none;right:10px}.birth-status{font-size:7px;max-width:calc(100% - 80px)}}
+
+/* North-up map references, kept outside the weather drawing area. */
+.map-reference{display:flex;align-items:center;gap:22px;padding:10px 16px;background:#f5f8f1;border-top:1px solid #dce4dd;color:#385943}.north-reference{display:flex;align-items:center;gap:6px;font-size:10px}.north-reference svg{display:block;flex:none}.distance-reference{display:flex;flex-direction:column;align-items:flex-start;gap:0}.distance-reference strong{font-size:10px;font-weight:600}.distance-reference svg{display:block;overflow:visible}.distance-reference small{font-size:9px;color:#6b806d}
+
+/* Retain the current legend/settings placement for the restored original expression. */
+body[data-representation=baseline] .flow-key,body[data-representation=baseline] .flow-settings-note{display:block}
+body[data-representation=baseline] .flow-key .legend-measure{position:relative;margin:10px 0 18px}
