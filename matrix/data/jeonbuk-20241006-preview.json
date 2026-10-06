@@ -1,0 +1,1721 @@
+{
+  "schemaVersion": "wind-matrix/1",
+  "kind": "observed",
+  "dateLocal": "2024-10-06",
+  "timezone": "Asia/Seoul",
+  "intervalMinutes": 1,
+  "averagingPeriodMinutes": 1,
+  "windDirectionEncoding": "kma-portal-mi1-avg-wd",
+  "title": "전북 · 2024-10-06 KST · 일부 원본 확보",
+  "acquisitionNote": "전주 00:01–00:10 실제 1분 관측 10건만 확보했습니다. 나머지 1,430분은 미확보이며 하루 전체 유효·결측 수는 아직 알 수 없습니다. QC 표시는 미확보입니다.",
+  "rosterNote": "당일 운영·좌표 이력 확인 후보 43곳 · 전북 전체 목록의 포괄성 미확인",
+  "sources": [
+    {
+      "title": "기상청 자료포털 · ASOS 분자료 공개 표본 (전주, 풍향·풍속만)",
+      "url": "https://data.kma.go.kr/data/grnd/selectAsosRltmList.do?pgmNo=36",
+      "note": "00:01–00:10의 실제 10행만 확보. 전일 파일은 로그인 후 다운로드가 필요합니다."
+    },
+    {
+      "title": "기상청 관측지점 이력",
+      "url": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+      "note": "당일 유효 좌표 확인 43후보. 당시 전북 전체 지점을 모두 포함하는지는 아직 확인하지 못했습니다."
+    }
+  ],
+  "rawFiles": [
+    {
+      "path": "matrix/data/source/jeonju-wind-preview-20241006.json",
+      "sha256": "6ea4c10bfb65c0f971774e0082aa570f40aa92b42d7be7e07603744f48ac2ef6"
+    },
+    {
+      "path": "matrix/data/source/jeonju-wind-preview-20241006.csv",
+      "sha256": "dc3e59ea4c6d13b6209381f5ab17e2b50d807fdb4a52b7b3881d7aebeec19986"
+    },
+    {
+      "path": "matrix/data/source/jeonbuk-station-history-20241006.json",
+      "sha256": "70fd8f166072505afd11e6e586a08a7548a92bf0045cf604a282978c0a613534"
+    },
+    {
+      "path": "matrix/data/source/raw/jeonju-20241006-wind-only-public-preview.html",
+      "sha256": "33089fdfb85f6e9f5cb81a73ca9df759d9d003ab4a5cadb78c25a8488998fde0"
+    },
+    {
+      "path": "matrix/data/source/raw/jeonbuk-candidate-history-asos.csv",
+      "sha256": "e287c1254e6b1f996317e9558ad467ce2af4a986484da9da9845625f3c55d692"
+    },
+    {
+      "path": "matrix/data/source/raw/jeonbuk-candidate-history-aws.csv",
+      "sha256": "4bd5825798c76a4dc330edf1530e2d9d69b81df4e0eebb36f69e0edbb493993d"
+    }
+  ],
+  "stations": [
+    {
+      "id": "140",
+      "name": "군산",
+      "network": "ASOS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 36.0053,
+          "lon": 126.7614,
+          "validFrom": "2003-12-31T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-asos.csv",
+            "sourceDataRow": 1,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "146",
+      "name": "전주",
+      "network": "ASOS",
+      "acquisitionStatus": "partial",
+      "acquiredRanges": [
+        [
+          1,
+          10
+        ]
+      ],
+      "positions": [
+        {
+          "lat": 35.8409,
+          "lon": 127.1172,
+          "validFrom": "2015-07-01T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-asos.csv",
+            "sourceDataRow": 3,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "전주 우선 검토 · 00:01–00:10 실제 공개 표본 10분 · 전일 완전성 미확인",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 10,
+        "validNumericPairsAmongAcquired": 10,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1430,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "172",
+      "name": "고창",
+      "network": "ASOS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.3482,
+          "lon": 126.599,
+          "validFrom": "2010-12-01T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-asos.csv",
+            "sourceDataRow": 5,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "243",
+      "name": "부안",
+      "network": "ASOS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.7296,
+          "lon": 126.7166,
+          "validFrom": "1972-03-01T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-asos.csv",
+            "sourceDataRow": 6,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "244",
+      "name": "임실",
+      "network": "ASOS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.612,
+          "lon": 127.2856,
+          "validFrom": "1970-06-02T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-asos.csv",
+            "sourceDataRow": 7,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "245",
+      "name": "정읍",
+      "network": "ASOS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.5633,
+          "lon": 126.839,
+          "validFrom": "2016-11-01T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-asos.csv",
+            "sourceDataRow": 8,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "247",
+      "name": "남원",
+      "network": "ASOS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.4213,
+          "lon": 127.3965,
+          "validFrom": "2017-08-25T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-asos.csv",
+            "sourceDataRow": 10,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "248",
+      "name": "장수",
+      "network": "ASOS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.657,
+          "lon": 127.5203,
+          "validFrom": "1988-01-01T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-asos.csv",
+            "sourceDataRow": 13,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "251",
+      "name": "고창군",
+      "network": "ASOS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.4266,
+          "lon": 126.697,
+          "validFrom": "2010-12-01T00:00:00+09:00",
+          "validTo": "2026-06-02T00:00:00+09:00",
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-asos.csv",
+            "sourceDataRow": 15,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "254",
+      "name": "순창군",
+      "network": "ASOS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.3713,
+          "lon": 127.1286,
+          "validFrom": "2008-07-16T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-asos.csv",
+            "sourceDataRow": 18,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "300",
+      "name": "말도",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.858,
+          "lon": 126.3151,
+          "validFrom": "2020-10-23T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 2,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "314",
+      "name": "설천봉",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.8662,
+          "lon": 127.7431,
+          "validFrom": "2020-10-23T00:00:00+09:00",
+          "validTo": "2024-10-15T00:00:00+09:00",
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 8,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "317",
+      "name": "구이",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.7295,
+          "lon": 127.1142,
+          "validFrom": "2022-09-22T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 14,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "379",
+      "name": "번암",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.5405,
+          "lon": 127.5463,
+          "validFrom": "2021-11-16T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 19,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "672",
+      "name": "상하",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.4424,
+          "lon": 126.4884,
+          "validFrom": "2021-07-25T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 20,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "690",
+      "name": "풍산",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.3362,
+          "lon": 127.1392,
+          "validFrom": "2022-09-26T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 23,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "700",
+      "name": "어청도",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 36.1251,
+          "lon": 125.9682,
+          "validFrom": "2021-07-24T00:00:00+09:00",
+          "validTo": "2024-10-15T00:00:00+09:00",
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 28,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "701",
+      "name": "무주",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 36.0017,
+          "lon": 127.6684,
+          "validFrom": "2024-09-24T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 33,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "702",
+      "name": "익산",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.9381,
+          "lon": 126.9925,
+          "validFrom": "2024-10-03T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 38,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "703",
+      "name": "진안",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.7604,
+          "lon": 127.4374,
+          "validFrom": "2020-10-23T00:00:00+09:00",
+          "validTo": "2025-09-24T00:00:00+09:00",
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 46,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "704",
+      "name": "변산",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.621,
+          "lon": 126.4776,
+          "validFrom": "2020-10-23T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 49,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "719",
+      "name": "선유도",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.8088,
+          "lon": 126.3977,
+          "validFrom": "2020-02-28T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 53,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "733",
+      "name": "함라",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 36.0461,
+          "lon": 126.8917,
+          "validFrom": "2012-10-10T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 58,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "734",
+      "name": "완주",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.9855,
+          "lon": 127.2457,
+          "validFrom": "2019-04-26T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 60,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "735",
+      "name": "덕유산",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.8942,
+          "lon": 127.7731,
+          "validFrom": "2021-07-28T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 65,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "736",
+      "name": "진봉",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.8468,
+          "lon": 126.784,
+          "validFrom": "2020-10-23T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 71,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "737",
+      "name": "김제",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.8091,
+          "lon": 126.8777,
+          "validFrom": "2020-10-23T00:00:00+09:00",
+          "validTo": "2025-09-23T00:00:00+09:00",
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 77,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "738",
+      "name": "줄포",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.5795,
+          "lon": 126.6739,
+          "validFrom": "2020-11-02T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 81,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "739",
+      "name": "심원",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.5225,
+          "lon": 126.5467,
+          "validFrom": "2020-09-26T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 86,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "756",
+      "name": "위도",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.6015,
+          "lon": 126.282,
+          "validFrom": "2023-11-01T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 90,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "757",
+      "name": "진안주천",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.9744,
+          "lon": 127.436,
+          "validFrom": "2020-01-03T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 96,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "758",
+      "name": "동향",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.8352,
+          "lon": 127.5712,
+          "validFrom": "2021-10-15T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 102,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "759",
+      "name": "뱀사골",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.3716,
+          "lon": 127.5783,
+          "validFrom": "2024-09-25T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 107,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "760",
+      "name": "복흥",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.4274,
+          "lon": 126.9327,
+          "validFrom": "2021-10-15T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 113,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "761",
+      "name": "태인",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.6508,
+          "lon": 126.9346,
+          "validFrom": "2020-10-23T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 120,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "762",
+      "name": "임실강진",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.5517,
+          "lon": 127.187,
+          "validFrom": "2024-06-01T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 127,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "763",
+      "name": "여산",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 36.0592,
+          "lon": 127.062,
+          "validFrom": "2009-12-08T00:00:00+09:00",
+          "validTo": "2024-10-15T00:00:00+09:00",
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 136,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "764",
+      "name": "신덕",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.6736,
+          "lon": 127.1414,
+          "validFrom": "2020-10-23T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 139,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "864",
+      "name": "완산",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.8215,
+          "lon": 127.155,
+          "validFrom": "2020-10-23T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 145,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "881",
+      "name": "새만금",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.7295,
+          "lon": 126.5289,
+          "validFrom": "2023-11-01T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 149,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "886",
+      "name": "군산산단",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.9505,
+          "lon": 126.5912,
+          "validFrom": "2023-11-03T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 153,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "951",
+      "name": "내장산",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.5087,
+          "lon": 126.9073,
+          "validFrom": "2024-09-27T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 157,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    },
+    {
+      "id": "994",
+      "name": "심포",
+      "network": "AWS",
+      "acquisitionStatus": "unavailable",
+      "acquiredRanges": [],
+      "positions": [
+        {
+          "lat": 35.8545,
+          "lon": 126.6421,
+          "validFrom": "2022-05-02T00:00:00+09:00",
+          "validTo": null,
+          "verified": true,
+          "source": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "evidence": {
+            "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+            "sourceFile": "raw/jeonbuk-candidate-history-aws.csv",
+            "sourceDataRow": 162,
+            "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+          }
+        }
+      ],
+      "note": "당일 운영 이력 확인 후보 · 풍향·풍속 원본 미확보",
+      "sourceCoverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 0,
+        "validNumericPairsAmongAcquired": 0,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1440,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    }
+  ],
+  "records": [
+    {
+      "timestamp": "2024-10-06T00:01:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 139.6,
+      "speedMps": 0.8,
+      "sourceRow": 1,
+      "rawValues": {
+        "TM": "2024-10-06 00:01",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "139.6",
+        "MI1_AVG_WS": "0.8"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:02:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 142.1,
+      "speedMps": 0.8,
+      "sourceRow": 2,
+      "rawValues": {
+        "TM": "2024-10-06 00:02",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "142.1",
+        "MI1_AVG_WS": "0.8"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:03:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 138.6,
+      "speedMps": 0.7,
+      "sourceRow": 3,
+      "rawValues": {
+        "TM": "2024-10-06 00:03",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "138.6",
+        "MI1_AVG_WS": "0.7"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:04:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 129.3,
+      "speedMps": 0.8,
+      "sourceRow": 4,
+      "rawValues": {
+        "TM": "2024-10-06 00:04",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "129.3",
+        "MI1_AVG_WS": "0.8"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:05:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 123.9,
+      "speedMps": 0.7,
+      "sourceRow": 5,
+      "rawValues": {
+        "TM": "2024-10-06 00:05",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "123.9",
+        "MI1_AVG_WS": "0.7"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:06:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 133.1,
+      "speedMps": 0.8,
+      "sourceRow": 6,
+      "rawValues": {
+        "TM": "2024-10-06 00:06",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "133.1",
+        "MI1_AVG_WS": "0.8"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:07:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 123.8,
+      "speedMps": 0.9,
+      "sourceRow": 7,
+      "rawValues": {
+        "TM": "2024-10-06 00:07",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "123.8",
+        "MI1_AVG_WS": "0.9"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:08:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 126.5,
+      "speedMps": 0.8,
+      "sourceRow": 8,
+      "rawValues": {
+        "TM": "2024-10-06 00:08",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "126.5",
+        "MI1_AVG_WS": "0.8"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:09:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 125.6,
+      "speedMps": 0.7,
+      "sourceRow": 9,
+      "rawValues": {
+        "TM": "2024-10-06 00:09",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "125.6",
+        "MI1_AVG_WS": "0.7"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:10:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 108.1,
+      "speedMps": 0.8,
+      "sourceRow": 10,
+      "rawValues": {
+        "TM": "2024-10-06 00:10",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "108.1",
+        "MI1_AVG_WS": "0.8"
+      },
+      "qcStatus": "not_acquired"
+    }
+  ],
+  "originalSourceMetadata": [
+    {
+      "publisher": "기상청",
+      "sourceUrl": "https://data.kma.go.kr/data/grnd/selectAsosRltmList.do?pgmNo=36",
+      "method": "POST",
+      "requestParams": {
+        "lrgClssCd": "SFC",
+        "mddlClssCd": "SFC01",
+        "dataFormCd": "F00503",
+        "serviceSe": "F00102",
+        "pgmNo": "36",
+        "stnIds": "154_146",
+        "elementCds": "SFC01044001,SFC01044002",
+        "elementGroupSns": "315",
+        "txtElementNm": "풍향,풍속",
+        "txtStnNm": "전주",
+        "startDt": "20241006",
+        "endDt": "20241006",
+        "startDt_d": "20241006",
+        "endDt_d": "20241006",
+        "startHh": "00",
+        "endHh": "23",
+        "startYear": "2024",
+        "endYear": "2024",
+        "pageIndex": "1",
+        "pageRowCount": "20",
+        "firstLoading": "N"
+      },
+      "fetchedAt": "2026-10-06T03:38:58.009183+00:00",
+      "rawFile": "raw/jeonju-20241006-wind-only-public-preview.html",
+      "rawSha256": "33089fdfb85f6e9f5cb81a73ca9df759d9d003ab4a5cadb78c25a8488998fde0",
+      "sourceFieldNames": [
+        "TM",
+        "STN_ID",
+        "STN_NM",
+        "MI1_AVG_WD",
+        "MI1_AVG_WS"
+      ],
+      "sourceObservationRows": 10,
+      "publicPreviewLimit": 10,
+      "fullDownloadRequiresLogin": true,
+      "note": "Only the returned ten actual wind rows are acquired. No interpolation, relabeling, completeness extrapolation, or sampling-limit manipulation."
+    }
+  ],
+  "warnings": [
+    "Ten-row public preview, not a complete-day dataset. Other minutes are unacquired, not measured missing.",
+    "The portal daily query began at 00:01; full-file midnight inclusion has not yet been inspected. Source end timestamps are preserved.",
+    "Portal-specific raw 360/calm semantics must be verified before directional use of such values. API Hub WD1 semantics are not silently applied to MI1_AVG_WD.",
+    "Wind QC flags were not requested or acquired; numeric validity does not assert QC pass."
+  ]
+}

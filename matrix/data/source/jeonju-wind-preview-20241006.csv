@@ -1,0 +1,11 @@
+﻿timestamp_kst,station_id,station_name,historical_lat,historical_lon,wind_speed_1min_mps,wind_direction_from_deg,source_status
+2024-10-06T00:01:00+09:00,146,전주,35.8409,127.1172,0.8,139.6,public_preview_not_full_day
+2024-10-06T00:02:00+09:00,146,전주,35.8409,127.1172,0.8,142.1,public_preview_not_full_day
+2024-10-06T00:03:00+09:00,146,전주,35.8409,127.1172,0.7,138.6,public_preview_not_full_day
+2024-10-06T00:04:00+09:00,146,전주,35.8409,127.1172,0.8,129.3,public_preview_not_full_day
+2024-10-06T00:05:00+09:00,146,전주,35.8409,127.1172,0.7,123.9,public_preview_not_full_day
+2024-10-06T00:06:00+09:00,146,전주,35.8409,127.1172,0.8,133.1,public_preview_not_full_day
+2024-10-06T00:07:00+09:00,146,전주,35.8409,127.1172,0.9,123.8,public_preview_not_full_day
+2024-10-06T00:08:00+09:00,146,전주,35.8409,127.1172,0.8,126.5,public_preview_not_full_day
+2024-10-06T00:09:00+09:00,146,전주,35.8409,127.1172,0.7,125.6,public_preview_not_full_day
+2024-10-06T00:10:00+09:00,146,전주,35.8409,127.1172,0.8,108.1,public_preview_not_full_day

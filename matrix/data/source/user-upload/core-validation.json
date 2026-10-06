@@ -1,0 +1,24 @@
+{
+  "coreValidation": "passed",
+  "recordsMutated": false,
+  "boundedRecords": 14390,
+  "excludedOriginalRows": 10,
+  "verifiedHistoricalStations": 43,
+  "totalsObservedStations": {
+    "valid": 14375,
+    "missing": 15,
+    "unavailable": 10,
+    "calm": 2222,
+    "directional": 12153
+  },
+  "jeonju": {
+    "valid": 1439,
+    "missing": 0,
+    "unavailable": 1,
+    "calm": 78,
+    "directional": 1361,
+    "duplicate": 0,
+    "invalid": 0,
+    "sourceRows": 1439
+  }
+}

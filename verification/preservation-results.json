@@ -1,0 +1,25 @@
+{
+  "result": "PASS",
+  "retainedFiles": 25,
+  "exactStationSnapshots": 43,
+  "stations": 43,
+  "records": 14390,
+  "excludedNextDayRows": 10,
+  "rawMinutes": 1440,
+  "jeonjuEventPoints": 43,
+  "jeonjuEventEdges": 42,
+  "responsiveWidths": [
+    1,
+    220,
+    320,
+    375.5,
+    590,
+    700,
+    1180
+  ],
+  "buanGapInclusive": [
+    1378,
+    1392
+  ],
+  "browserQA": "not run"
+}

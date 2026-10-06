@@ -1,0 +1,271 @@
+{
+  "schemaVersion": "wind-matrix/1",
+  "dateLocal": "2024-10-06",
+  "timezone": "Asia/Seoul",
+  "intervalMinutes": 1,
+  "averagingMinutes": 1,
+  "acquisitionStatus": "partial",
+  "windDirectionEncoding": "kma-portal-mi1-avg-wd",
+  "directionConvention": "FROM",
+  "raw360Policy": "unverified_for_this_portal_schema_preserve_and_render_no_arrow",
+  "scope": {
+    "region": "전북특별자치도",
+    "desiredStartInclusive": "2024-10-06T00:00:00+09:00",
+    "desiredEndExclusive": "2024-10-07T00:00:00+09:00",
+    "expectedSlotsPerStation": 1440
+  },
+  "stations": [
+    {
+      "id": "146",
+      "name": "전주",
+      "network": "ASOS",
+      "lat": 35.8409,
+      "lon": 127.1172,
+      "validFrom": "2015-07-01",
+      "validTo": null,
+      "historicalPosition": {
+        "verified": true,
+        "asOf": "2024-10-06",
+        "lat": 35.8409,
+        "lon": 127.1172,
+        "validFrom": "2015-07-01",
+        "validTo": null,
+        "region": "전북특별자치도",
+        "evidence": {
+          "sourceUrl": "https://data.kma.go.kr/tmeta/stn/selectStnList.do?pgmNo=123",
+          "sourceFile": "raw/jeonbuk-candidate-history-asos.csv",
+          "sourceDataRow": 3,
+          "method": "Official station history record whose validity interval contains target date; no current-coordinate substitution"
+        }
+      },
+      "coverage": {
+        "expectedSlots": 1440,
+        "acquiredRecords": 10,
+        "validNumericPairsAmongAcquired": 10,
+        "missingPairsAmongAcquired": 0,
+        "unacquiredSlots": 1430,
+        "fullDayValidPairs": null,
+        "fullDayMissingPairs": null,
+        "qcVerified": false
+      }
+    }
+  ],
+  "records": [
+    {
+      "timestamp": "2024-10-06T00:01:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 139.6,
+      "speedMps": 0.8,
+      "sourceRow": 1,
+      "rawValues": {
+        "TM": "2024-10-06 00:01",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "139.6",
+        "MI1_AVG_WS": "0.8"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:02:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 142.1,
+      "speedMps": 0.8,
+      "sourceRow": 2,
+      "rawValues": {
+        "TM": "2024-10-06 00:02",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "142.1",
+        "MI1_AVG_WS": "0.8"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:03:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 138.6,
+      "speedMps": 0.7,
+      "sourceRow": 3,
+      "rawValues": {
+        "TM": "2024-10-06 00:03",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "138.6",
+        "MI1_AVG_WS": "0.7"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:04:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 129.3,
+      "speedMps": 0.8,
+      "sourceRow": 4,
+      "rawValues": {
+        "TM": "2024-10-06 00:04",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "129.3",
+        "MI1_AVG_WS": "0.8"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:05:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 123.9,
+      "speedMps": 0.7,
+      "sourceRow": 5,
+      "rawValues": {
+        "TM": "2024-10-06 00:05",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "123.9",
+        "MI1_AVG_WS": "0.7"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:06:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 133.1,
+      "speedMps": 0.8,
+      "sourceRow": 6,
+      "rawValues": {
+        "TM": "2024-10-06 00:06",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "133.1",
+        "MI1_AVG_WS": "0.8"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:07:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 123.8,
+      "speedMps": 0.9,
+      "sourceRow": 7,
+      "rawValues": {
+        "TM": "2024-10-06 00:07",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "123.8",
+        "MI1_AVG_WS": "0.9"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:08:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 126.5,
+      "speedMps": 0.8,
+      "sourceRow": 8,
+      "rawValues": {
+        "TM": "2024-10-06 00:08",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "126.5",
+        "MI1_AVG_WS": "0.8"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:09:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 125.6,
+      "speedMps": 0.7,
+      "sourceRow": 9,
+      "rawValues": {
+        "TM": "2024-10-06 00:09",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "125.6",
+        "MI1_AVG_WS": "0.7"
+      },
+      "qcStatus": "not_acquired"
+    },
+    {
+      "timestamp": "2024-10-06T00:10:00+09:00",
+      "stationId": "146",
+      "directionFromDeg": 108.1,
+      "speedMps": 0.8,
+      "sourceRow": 10,
+      "rawValues": {
+        "TM": "2024-10-06 00:10",
+        "STN_ID": "146",
+        "STN_NM": "전주",
+        "MI1_AVG_WD": "108.1",
+        "MI1_AVG_WS": "0.8"
+      },
+      "qcStatus": "not_acquired"
+    }
+  ],
+  "acquiredRanges": [
+    [
+      1,
+      10
+    ]
+  ],
+  "coverage": {
+    "expectedSlots": 1440,
+    "acquiredRecords": 10,
+    "validNumericPairsAmongAcquired": 10,
+    "missingPairsAmongAcquired": 0,
+    "unacquiredSlots": 1430,
+    "fullDayValidPairs": null,
+    "fullDayMissingPairs": null,
+    "qcVerified": false
+  },
+  "sources": [
+    {
+      "publisher": "기상청",
+      "sourceUrl": "https://data.kma.go.kr/data/grnd/selectAsosRltmList.do?pgmNo=36",
+      "method": "POST",
+      "requestParams": {
+        "lrgClssCd": "SFC",
+        "mddlClssCd": "SFC01",
+        "dataFormCd": "F00503",
+        "serviceSe": "F00102",
+        "pgmNo": "36",
+        "stnIds": "154_146",
+        "elementCds": "SFC01044001,SFC01044002",
+        "elementGroupSns": "315",
+        "txtElementNm": "풍향,풍속",
+        "txtStnNm": "전주",
+        "startDt": "20241006",
+        "endDt": "20241006",
+        "startDt_d": "20241006",
+        "endDt_d": "20241006",
+        "startHh": "00",
+        "endHh": "23",
+        "startYear": "2024",
+        "endYear": "2024",
+        "pageIndex": "1",
+        "pageRowCount": "20",
+        "firstLoading": "N"
+      },
+      "fetchedAt": "2026-10-06T03:38:58.009183+00:00",
+      "rawFile": "raw/jeonju-20241006-wind-only-public-preview.html",
+      "rawSha256": "33089fdfb85f6e9f5cb81a73ca9df759d9d003ab4a5cadb78c25a8488998fde0",
+      "sourceFieldNames": [
+        "TM",
+        "STN_ID",
+        "STN_NM",
+        "MI1_AVG_WD",
+        "MI1_AVG_WS"
+      ],
+      "sourceObservationRows": 10,
+      "publicPreviewLimit": 10,
+      "fullDownloadRequiresLogin": true,
+      "note": "Only the returned ten actual wind rows are acquired. No interpolation, relabeling, completeness extrapolation, or sampling-limit manipulation."
+    }
+  ],
+  "warnings": [
+    "Ten-row public preview, not a complete-day dataset. Other minutes are unacquired, not measured missing.",
+    "The portal daily query began at 00:01; full-file midnight inclusion has not yet been inspected. Source end timestamps are preserved.",
+    "Portal-specific raw 360/calm semantics must be verified before directional use of such values. API Hub WD1 semantics are not silently applied to MI1_AVG_WD.",
+    "Wind QC flags were not requested or acquired; numeric validity does not assert QC pass."
+  ]
+}

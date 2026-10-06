@@ -1,0 +1,676 @@
+{
+  "schemaVersion": "wind-upload-validation/1",
+  "validatedAt": "2026-10-06T03:55:19.782643+00:00",
+  "sourceFile": "OBS_ASOS_MI_20261006125115.csv",
+  "sha256": "c0e181df76e1ed75f39c8a5e90ed167cddaab3d9982d8eb0924c334623b41c74",
+  "sizeBytes": 510512,
+  "encoding": "CP949 (strict decode; no byte conversion)",
+  "newline": "CRLF",
+  "headers": [
+    "지점",
+    "지점명",
+    "일시",
+    "풍향(deg)",
+    "풍속(m/s)"
+  ],
+  "onlyRequestedWeatherVariables": true,
+  "targetDate": "2024-10-06",
+  "timezone": "Asia/Seoul",
+  "targetStartInclusive": "2024-10-06T00:00:00+09:00",
+  "targetEndExclusive": "2024-10-07T00:00:00+09:00",
+  "totalSourceRows": 14400,
+  "inDayRows": 14390,
+  "excludedRows": 10,
+  "sourceStationCount": 10,
+  "knownCandidateStationCount": 43,
+  "windFieldMapping": {
+    "풍향(deg)": "MI1_AVG_WD / 1-minute average meteorological FROM degrees",
+    "풍속(m/s)": "MI1_AVG_WS / 1-minute average m/s"
+  },
+  "fieldMappingEvidence": "User-supplied official ASOS minute CSV matches all ten wind pairs of previously verified MI1_AVG_WD/MI1_AVG_WS public preview; see source-definitions.json for official averaging definitions.",
+  "previewMatchedRows": [
+    {
+      "stationId": "146",
+      "timestamp": "2024-10-06T00:01:00+09:00",
+      "uploadedSourceRow": 1442
+    },
+    {
+      "stationId": "146",
+      "timestamp": "2024-10-06T00:02:00+09:00",
+      "uploadedSourceRow": 1443
+    },
+    {
+      "stationId": "146",
+      "timestamp": "2024-10-06T00:03:00+09:00",
+      "uploadedSourceRow": 1444
+    },
+    {
+      "stationId": "146",
+      "timestamp": "2024-10-06T00:04:00+09:00",
+      "uploadedSourceRow": 1445
+    },
+    {
+      "stationId": "146",
+      "timestamp": "2024-10-06T00:05:00+09:00",
+      "uploadedSourceRow": 1446
+    },
+    {
+      "stationId": "146",
+      "timestamp": "2024-10-06T00:06:00+09:00",
+      "uploadedSourceRow": 1447
+    },
+    {
+      "stationId": "146",
+      "timestamp": "2024-10-06T00:07:00+09:00",
+      "uploadedSourceRow": 1448
+    },
+    {
+      "stationId": "146",
+      "timestamp": "2024-10-06T00:08:00+09:00",
+      "uploadedSourceRow": 1449
+    },
+    {
+      "stationId": "146",
+      "timestamp": "2024-10-06T00:09:00+09:00",
+      "uploadedSourceRow": 1450
+    },
+    {
+      "stationId": "146",
+      "timestamp": "2024-10-06T00:10:00+09:00",
+      "uploadedSourceRow": 1451
+    }
+  ],
+  "boundaryHandling": "Retain actual source timestamps. 00:00 target-day is unacquired, never a measured missing value. 00:00 next-day is excluded, never shifted or relabeled.",
+  "raw360Policy": "Portal MI1_AVG_WD 360 meaning remains unverified; do not import AWS WD1 calm code semantics; no raw360 occurs in this upload.",
+  "calmPolicy": "Numerically valid speed exactly0 is displayed without a directional arrow. Preserve its raw direction, even when nonzero; never replace or infer its FROM.",
+  "missingPolicy": "Empty source speed stays empty in rawValues and becomes null in numeric speed. No imputation. Unacquired midnight is distinct from15 actual rows with blank speed.",
+  "quality": "No wind QC columns acquired; numeric validity is not QC approval.",
+  "stations": [
+    {
+      "stationId": "140",
+      "name": "군산",
+      "network": "ASOS",
+      "expectedMinuteSlots": 1440,
+      "sourceRows": 1440,
+      "sourceMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "sourceMaxTimestamp": "2024-10-07T00:00:00+09:00",
+      "inDayRows": 1439,
+      "uniqueInDayMinutes": 1439,
+      "targetMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "targetMaxTimestamp": "2024-10-06T23:59:00+09:00",
+      "outOfRangeRows": 1,
+      "duplicateMinuteCount": 0,
+      "duplicateExcessRows": 0,
+      "validSpeedCount": 1439,
+      "validDirectionValueCount": 1439,
+      "validNumericPairCount": 1439,
+      "usableWindCount": 1439,
+      "directionalArrowCount": 1342,
+      "calmZeroSpeedCount": 97,
+      "calmWithNonzeroRawDirectionCount": 97,
+      "raw360Count": 0,
+      "unresolvedDirectionCount": 0,
+      "missingDirectionTokenCount": 0,
+      "missingSpeedTokenCount": 0,
+      "missingWithinAcquiredMinutes": 0,
+      "invalidNonblankSpeedCount": 0,
+      "rawNegativeTokens": {
+        "풍향(deg)": {},
+        "풍속(m/s)": {}
+      },
+      "unacquiredMinuteCount": 1,
+      "unacquiredMinuteIndices": [
+        0
+      ],
+      "absentWithinAcquiredRange": [],
+      "missingSpeedRows": [],
+      "minSpeedMps": 0.0,
+      "maxSpeedMps": 3.5,
+      "qcVerified": false
+    },
+    {
+      "stationId": "146",
+      "name": "전주",
+      "network": "ASOS",
+      "expectedMinuteSlots": 1440,
+      "sourceRows": 1440,
+      "sourceMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "sourceMaxTimestamp": "2024-10-07T00:00:00+09:00",
+      "inDayRows": 1439,
+      "uniqueInDayMinutes": 1439,
+      "targetMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "targetMaxTimestamp": "2024-10-06T23:59:00+09:00",
+      "outOfRangeRows": 1,
+      "duplicateMinuteCount": 0,
+      "duplicateExcessRows": 0,
+      "validSpeedCount": 1439,
+      "validDirectionValueCount": 1439,
+      "validNumericPairCount": 1439,
+      "usableWindCount": 1439,
+      "directionalArrowCount": 1361,
+      "calmZeroSpeedCount": 78,
+      "calmWithNonzeroRawDirectionCount": 78,
+      "raw360Count": 0,
+      "unresolvedDirectionCount": 0,
+      "missingDirectionTokenCount": 0,
+      "missingSpeedTokenCount": 0,
+      "missingWithinAcquiredMinutes": 0,
+      "invalidNonblankSpeedCount": 0,
+      "rawNegativeTokens": {
+        "풍향(deg)": {},
+        "풍속(m/s)": {}
+      },
+      "unacquiredMinuteCount": 1,
+      "unacquiredMinuteIndices": [
+        0
+      ],
+      "absentWithinAcquiredRange": [],
+      "missingSpeedRows": [],
+      "minSpeedMps": 0.0,
+      "maxSpeedMps": 2.7,
+      "qcVerified": false
+    },
+    {
+      "stationId": "172",
+      "name": "고창",
+      "network": "ASOS",
+      "expectedMinuteSlots": 1440,
+      "sourceRows": 1440,
+      "sourceMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "sourceMaxTimestamp": "2024-10-07T00:00:00+09:00",
+      "inDayRows": 1439,
+      "uniqueInDayMinutes": 1439,
+      "targetMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "targetMaxTimestamp": "2024-10-06T23:59:00+09:00",
+      "outOfRangeRows": 1,
+      "duplicateMinuteCount": 0,
+      "duplicateExcessRows": 0,
+      "validSpeedCount": 1439,
+      "validDirectionValueCount": 1439,
+      "validNumericPairCount": 1439,
+      "usableWindCount": 1439,
+      "directionalArrowCount": 1232,
+      "calmZeroSpeedCount": 207,
+      "calmWithNonzeroRawDirectionCount": 0,
+      "raw360Count": 0,
+      "unresolvedDirectionCount": 0,
+      "missingDirectionTokenCount": 0,
+      "missingSpeedTokenCount": 0,
+      "missingWithinAcquiredMinutes": 0,
+      "invalidNonblankSpeedCount": 0,
+      "rawNegativeTokens": {
+        "풍향(deg)": {},
+        "풍속(m/s)": {}
+      },
+      "unacquiredMinuteCount": 1,
+      "unacquiredMinuteIndices": [
+        0
+      ],
+      "absentWithinAcquiredRange": [],
+      "missingSpeedRows": [],
+      "minSpeedMps": 0.0,
+      "maxSpeedMps": 3.5,
+      "qcVerified": false
+    },
+    {
+      "stationId": "243",
+      "name": "부안",
+      "network": "ASOS",
+      "expectedMinuteSlots": 1440,
+      "sourceRows": 1440,
+      "sourceMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "sourceMaxTimestamp": "2024-10-07T00:00:00+09:00",
+      "inDayRows": 1439,
+      "uniqueInDayMinutes": 1439,
+      "targetMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "targetMaxTimestamp": "2024-10-06T23:59:00+09:00",
+      "outOfRangeRows": 1,
+      "duplicateMinuteCount": 0,
+      "duplicateExcessRows": 0,
+      "validSpeedCount": 1424,
+      "validDirectionValueCount": 1439,
+      "validNumericPairCount": 1424,
+      "usableWindCount": 1424,
+      "directionalArrowCount": 571,
+      "calmZeroSpeedCount": 853,
+      "calmWithNonzeroRawDirectionCount": 61,
+      "raw360Count": 0,
+      "unresolvedDirectionCount": 0,
+      "missingDirectionTokenCount": 0,
+      "missingSpeedTokenCount": 15,
+      "missingWithinAcquiredMinutes": 15,
+      "invalidNonblankSpeedCount": 0,
+      "rawNegativeTokens": {
+        "풍향(deg)": {},
+        "풍속(m/s)": {}
+      },
+      "unacquiredMinuteCount": 1,
+      "unacquiredMinuteIndices": [
+        0
+      ],
+      "absentWithinAcquiredRange": [],
+      "missingSpeedRows": [
+        {
+          "timestamp": "2024-10-06T22:58:00+09:00",
+          "sourceRow": 5699,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 22:58",
+            "풍향(deg)": "0",
+            "풍속(m/s)": ""
+          }
+        },
+        {
+          "timestamp": "2024-10-06T22:59:00+09:00",
+          "sourceRow": 5700,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 22:59",
+            "풍향(deg)": "0",
+            "풍속(m/s)": ""
+          }
+        },
+        {
+          "timestamp": "2024-10-06T23:00:00+09:00",
+          "sourceRow": 5701,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 23:00",
+            "풍향(deg)": "0",
+            "풍속(m/s)": ""
+          }
+        },
+        {
+          "timestamp": "2024-10-06T23:01:00+09:00",
+          "sourceRow": 5702,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 23:01",
+            "풍향(deg)": "0",
+            "풍속(m/s)": ""
+          }
+        },
+        {
+          "timestamp": "2024-10-06T23:02:00+09:00",
+          "sourceRow": 5703,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 23:02",
+            "풍향(deg)": "0",
+            "풍속(m/s)": ""
+          }
+        },
+        {
+          "timestamp": "2024-10-06T23:03:00+09:00",
+          "sourceRow": 5704,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 23:03",
+            "풍향(deg)": "0",
+            "풍속(m/s)": ""
+          }
+        },
+        {
+          "timestamp": "2024-10-06T23:04:00+09:00",
+          "sourceRow": 5705,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 23:04",
+            "풍향(deg)": "0",
+            "풍속(m/s)": ""
+          }
+        },
+        {
+          "timestamp": "2024-10-06T23:05:00+09:00",
+          "sourceRow": 5706,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 23:05",
+            "풍향(deg)": "0",
+            "풍속(m/s)": ""
+          }
+        },
+        {
+          "timestamp": "2024-10-06T23:06:00+09:00",
+          "sourceRow": 5707,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 23:06",
+            "풍향(deg)": "0",
+            "풍속(m/s)": ""
+          }
+        },
+        {
+          "timestamp": "2024-10-06T23:07:00+09:00",
+          "sourceRow": 5708,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 23:07",
+            "풍향(deg)": "0",
+            "풍속(m/s)": ""
+          }
+        },
+        {
+          "timestamp": "2024-10-06T23:08:00+09:00",
+          "sourceRow": 5709,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 23:08",
+            "풍향(deg)": "0",
+            "풍속(m/s)": ""
+          }
+        },
+        {
+          "timestamp": "2024-10-06T23:09:00+09:00",
+          "sourceRow": 5710,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 23:09",
+            "풍향(deg)": "39.3",
+            "풍속(m/s)": ""
+          }
+        },
+        {
+          "timestamp": "2024-10-06T23:10:00+09:00",
+          "sourceRow": 5711,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 23:10",
+            "풍향(deg)": "44.1",
+            "풍속(m/s)": ""
+          }
+        },
+        {
+          "timestamp": "2024-10-06T23:11:00+09:00",
+          "sourceRow": 5712,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 23:11",
+            "풍향(deg)": "0",
+            "풍속(m/s)": ""
+          }
+        },
+        {
+          "timestamp": "2024-10-06T23:12:00+09:00",
+          "sourceRow": 5713,
+          "rawValues": {
+            "지점": "243",
+            "지점명": "부안",
+            "일시": "2024-10-06 23:12",
+            "풍향(deg)": "0",
+            "풍속(m/s)": ""
+          }
+        }
+      ],
+      "minSpeedMps": 0.0,
+      "maxSpeedMps": 2.5,
+      "qcVerified": false
+    },
+    {
+      "stationId": "244",
+      "name": "임실",
+      "network": "ASOS",
+      "expectedMinuteSlots": 1440,
+      "sourceRows": 1440,
+      "sourceMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "sourceMaxTimestamp": "2024-10-07T00:00:00+09:00",
+      "inDayRows": 1439,
+      "uniqueInDayMinutes": 1439,
+      "targetMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "targetMaxTimestamp": "2024-10-06T23:59:00+09:00",
+      "outOfRangeRows": 1,
+      "duplicateMinuteCount": 0,
+      "duplicateExcessRows": 0,
+      "validSpeedCount": 1439,
+      "validDirectionValueCount": 1439,
+      "validNumericPairCount": 1439,
+      "usableWindCount": 1439,
+      "directionalArrowCount": 1173,
+      "calmZeroSpeedCount": 266,
+      "calmWithNonzeroRawDirectionCount": 151,
+      "raw360Count": 0,
+      "unresolvedDirectionCount": 0,
+      "missingDirectionTokenCount": 0,
+      "missingSpeedTokenCount": 0,
+      "missingWithinAcquiredMinutes": 0,
+      "invalidNonblankSpeedCount": 0,
+      "rawNegativeTokens": {
+        "풍향(deg)": {},
+        "풍속(m/s)": {}
+      },
+      "unacquiredMinuteCount": 1,
+      "unacquiredMinuteIndices": [
+        0
+      ],
+      "absentWithinAcquiredRange": [],
+      "missingSpeedRows": [],
+      "minSpeedMps": 0.0,
+      "maxSpeedMps": 2.7,
+      "qcVerified": false
+    },
+    {
+      "stationId": "245",
+      "name": "정읍",
+      "network": "ASOS",
+      "expectedMinuteSlots": 1440,
+      "sourceRows": 1440,
+      "sourceMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "sourceMaxTimestamp": "2024-10-07T00:00:00+09:00",
+      "inDayRows": 1439,
+      "uniqueInDayMinutes": 1439,
+      "targetMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "targetMaxTimestamp": "2024-10-06T23:59:00+09:00",
+      "outOfRangeRows": 1,
+      "duplicateMinuteCount": 0,
+      "duplicateExcessRows": 0,
+      "validSpeedCount": 1439,
+      "validDirectionValueCount": 1439,
+      "validNumericPairCount": 1439,
+      "usableWindCount": 1439,
+      "directionalArrowCount": 1439,
+      "calmZeroSpeedCount": 0,
+      "calmWithNonzeroRawDirectionCount": 0,
+      "raw360Count": 0,
+      "unresolvedDirectionCount": 0,
+      "missingDirectionTokenCount": 0,
+      "missingSpeedTokenCount": 0,
+      "missingWithinAcquiredMinutes": 0,
+      "invalidNonblankSpeedCount": 0,
+      "rawNegativeTokens": {
+        "풍향(deg)": {},
+        "풍속(m/s)": {}
+      },
+      "unacquiredMinuteCount": 1,
+      "unacquiredMinuteIndices": [
+        0
+      ],
+      "absentWithinAcquiredRange": [],
+      "missingSpeedRows": [],
+      "minSpeedMps": 0.1,
+      "maxSpeedMps": 2.9,
+      "qcVerified": false
+    },
+    {
+      "stationId": "247",
+      "name": "남원",
+      "network": "ASOS",
+      "expectedMinuteSlots": 1440,
+      "sourceRows": 1440,
+      "sourceMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "sourceMaxTimestamp": "2024-10-07T00:00:00+09:00",
+      "inDayRows": 1439,
+      "uniqueInDayMinutes": 1439,
+      "targetMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "targetMaxTimestamp": "2024-10-06T23:59:00+09:00",
+      "outOfRangeRows": 1,
+      "duplicateMinuteCount": 0,
+      "duplicateExcessRows": 0,
+      "validSpeedCount": 1439,
+      "validDirectionValueCount": 1439,
+      "validNumericPairCount": 1439,
+      "usableWindCount": 1439,
+      "directionalArrowCount": 1387,
+      "calmZeroSpeedCount": 52,
+      "calmWithNonzeroRawDirectionCount": 46,
+      "raw360Count": 0,
+      "unresolvedDirectionCount": 0,
+      "missingDirectionTokenCount": 0,
+      "missingSpeedTokenCount": 0,
+      "missingWithinAcquiredMinutes": 0,
+      "invalidNonblankSpeedCount": 0,
+      "rawNegativeTokens": {
+        "풍향(deg)": {},
+        "풍속(m/s)": {}
+      },
+      "unacquiredMinuteCount": 1,
+      "unacquiredMinuteIndices": [
+        0
+      ],
+      "absentWithinAcquiredRange": [],
+      "missingSpeedRows": [],
+      "minSpeedMps": 0.0,
+      "maxSpeedMps": 3.3,
+      "qcVerified": false
+    },
+    {
+      "stationId": "248",
+      "name": "장수",
+      "network": "ASOS",
+      "expectedMinuteSlots": 1440,
+      "sourceRows": 1440,
+      "sourceMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "sourceMaxTimestamp": "2024-10-07T00:00:00+09:00",
+      "inDayRows": 1439,
+      "uniqueInDayMinutes": 1439,
+      "targetMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "targetMaxTimestamp": "2024-10-06T23:59:00+09:00",
+      "outOfRangeRows": 1,
+      "duplicateMinuteCount": 0,
+      "duplicateExcessRows": 0,
+      "validSpeedCount": 1439,
+      "validDirectionValueCount": 1439,
+      "validNumericPairCount": 1439,
+      "usableWindCount": 1439,
+      "directionalArrowCount": 1163,
+      "calmZeroSpeedCount": 276,
+      "calmWithNonzeroRawDirectionCount": 101,
+      "raw360Count": 0,
+      "unresolvedDirectionCount": 0,
+      "missingDirectionTokenCount": 0,
+      "missingSpeedTokenCount": 0,
+      "missingWithinAcquiredMinutes": 0,
+      "invalidNonblankSpeedCount": 0,
+      "rawNegativeTokens": {
+        "풍향(deg)": {},
+        "풍속(m/s)": {}
+      },
+      "unacquiredMinuteCount": 1,
+      "unacquiredMinuteIndices": [
+        0
+      ],
+      "absentWithinAcquiredRange": [],
+      "missingSpeedRows": [],
+      "minSpeedMps": 0.0,
+      "maxSpeedMps": 3.0,
+      "qcVerified": false
+    },
+    {
+      "stationId": "251",
+      "name": "고창군",
+      "network": "ASOS",
+      "expectedMinuteSlots": 1440,
+      "sourceRows": 1440,
+      "sourceMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "sourceMaxTimestamp": "2024-10-07T00:00:00+09:00",
+      "inDayRows": 1439,
+      "uniqueInDayMinutes": 1439,
+      "targetMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "targetMaxTimestamp": "2024-10-06T23:59:00+09:00",
+      "outOfRangeRows": 1,
+      "duplicateMinuteCount": 0,
+      "duplicateExcessRows": 0,
+      "validSpeedCount": 1439,
+      "validDirectionValueCount": 1439,
+      "validNumericPairCount": 1439,
+      "usableWindCount": 1439,
+      "directionalArrowCount": 1204,
+      "calmZeroSpeedCount": 235,
+      "calmWithNonzeroRawDirectionCount": 233,
+      "raw360Count": 0,
+      "unresolvedDirectionCount": 0,
+      "missingDirectionTokenCount": 0,
+      "missingSpeedTokenCount": 0,
+      "missingWithinAcquiredMinutes": 0,
+      "invalidNonblankSpeedCount": 0,
+      "rawNegativeTokens": {
+        "풍향(deg)": {},
+        "풍속(m/s)": {}
+      },
+      "unacquiredMinuteCount": 1,
+      "unacquiredMinuteIndices": [
+        0
+      ],
+      "absentWithinAcquiredRange": [],
+      "missingSpeedRows": [],
+      "minSpeedMps": 0.0,
+      "maxSpeedMps": 2.6,
+      "qcVerified": false
+    },
+    {
+      "stationId": "254",
+      "name": "순창군",
+      "network": "ASOS",
+      "expectedMinuteSlots": 1440,
+      "sourceRows": 1440,
+      "sourceMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "sourceMaxTimestamp": "2024-10-07T00:00:00+09:00",
+      "inDayRows": 1439,
+      "uniqueInDayMinutes": 1439,
+      "targetMinTimestamp": "2024-10-06T00:01:00+09:00",
+      "targetMaxTimestamp": "2024-10-06T23:59:00+09:00",
+      "outOfRangeRows": 1,
+      "duplicateMinuteCount": 0,
+      "duplicateExcessRows": 0,
+      "validSpeedCount": 1439,
+      "validDirectionValueCount": 1439,
+      "validNumericPairCount": 1439,
+      "usableWindCount": 1439,
+      "directionalArrowCount": 1281,
+      "calmZeroSpeedCount": 158,
+      "calmWithNonzeroRawDirectionCount": 111,
+      "raw360Count": 0,
+      "unresolvedDirectionCount": 0,
+      "missingDirectionTokenCount": 0,
+      "missingSpeedTokenCount": 0,
+      "missingWithinAcquiredMinutes": 0,
+      "invalidNonblankSpeedCount": 0,
+      "rawNegativeTokens": {
+        "풍향(deg)": {},
+        "풍속(m/s)": {}
+      },
+      "unacquiredMinuteCount": 1,
+      "unacquiredMinuteIndices": [
+        0
+      ],
+      "absentWithinAcquiredRange": [],
+      "missingSpeedRows": [],
+      "minSpeedMps": 0.0,
+      "maxSpeedMps": 3.7,
+      "qcVerified": false
+    }
+  ]
+}

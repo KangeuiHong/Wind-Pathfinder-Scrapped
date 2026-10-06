@@ -1,0 +1,192 @@
+[
+  {
+    "record": {
+      "stationId": "140",
+      "timestamp": "2024-10-07T00:00:00+09:00",
+      "directionFromDeg": 5.9,
+      "speedMps": 0.8,
+      "rawValues": {
+        "지점": "140",
+        "지점명": "군산",
+        "일시": "2024-10-07 00:00",
+        "풍향(deg)": "5.9",
+        "풍속(m/s)": ".8"
+      },
+      "sourceRow": 1441,
+      "sourceFile": "matrix/data/source/user-upload/OBS_ASOS_MI_20261006125115.csv",
+      "qcStatus": "not_acquired"
+    },
+    "reason": "outside-target-day"
+  },
+  {
+    "record": {
+      "stationId": "146",
+      "timestamp": "2024-10-07T00:00:00+09:00",
+      "directionFromDeg": 156.3,
+      "speedMps": 0.4,
+      "rawValues": {
+        "지점": "146",
+        "지점명": "전주",
+        "일시": "2024-10-07 00:00",
+        "풍향(deg)": "156.3",
+        "풍속(m/s)": ".4"
+      },
+      "sourceRow": 2881,
+      "sourceFile": "matrix/data/source/user-upload/OBS_ASOS_MI_20261006125115.csv",
+      "qcStatus": "not_acquired"
+    },
+    "reason": "outside-target-day"
+  },
+  {
+    "record": {
+      "stationId": "172",
+      "timestamp": "2024-10-07T00:00:00+09:00",
+      "directionFromDeg": 107.7,
+      "speedMps": 0.7,
+      "rawValues": {
+        "지점": "172",
+        "지점명": "고창",
+        "일시": "2024-10-07 00:00",
+        "풍향(deg)": "107.7",
+        "풍속(m/s)": ".7"
+      },
+      "sourceRow": 4321,
+      "sourceFile": "matrix/data/source/user-upload/OBS_ASOS_MI_20261006125115.csv",
+      "qcStatus": "not_acquired"
+    },
+    "reason": "outside-target-day"
+  },
+  {
+    "record": {
+      "stationId": "243",
+      "timestamp": "2024-10-07T00:00:00+09:00",
+      "directionFromDeg": 0.0,
+      "speedMps": 0.0,
+      "rawValues": {
+        "지점": "243",
+        "지점명": "부안",
+        "일시": "2024-10-07 00:00",
+        "풍향(deg)": "0",
+        "풍속(m/s)": "0"
+      },
+      "sourceRow": 5761,
+      "sourceFile": "matrix/data/source/user-upload/OBS_ASOS_MI_20261006125115.csv",
+      "qcStatus": "not_acquired"
+    },
+    "reason": "outside-target-day"
+  },
+  {
+    "record": {
+      "stationId": "244",
+      "timestamp": "2024-10-07T00:00:00+09:00",
+      "directionFromDeg": 204.9,
+      "speedMps": 0.5,
+      "rawValues": {
+        "지점": "244",
+        "지점명": "임실",
+        "일시": "2024-10-07 00:00",
+        "풍향(deg)": "204.9",
+        "풍속(m/s)": ".5"
+      },
+      "sourceRow": 7201,
+      "sourceFile": "matrix/data/source/user-upload/OBS_ASOS_MI_20261006125115.csv",
+      "qcStatus": "not_acquired"
+    },
+    "reason": "outside-target-day"
+  },
+  {
+    "record": {
+      "stationId": "245",
+      "timestamp": "2024-10-07T00:00:00+09:00",
+      "directionFromDeg": 296.0,
+      "speedMps": 0.1,
+      "rawValues": {
+        "지점": "245",
+        "지점명": "정읍",
+        "일시": "2024-10-07 00:00",
+        "풍향(deg)": "296",
+        "풍속(m/s)": ".1"
+      },
+      "sourceRow": 8641,
+      "sourceFile": "matrix/data/source/user-upload/OBS_ASOS_MI_20261006125115.csv",
+      "qcStatus": "not_acquired"
+    },
+    "reason": "outside-target-day"
+  },
+  {
+    "record": {
+      "stationId": "247",
+      "timestamp": "2024-10-07T00:00:00+09:00",
+      "directionFromDeg": 50.5,
+      "speedMps": 0.5,
+      "rawValues": {
+        "지점": "247",
+        "지점명": "남원",
+        "일시": "2024-10-07 00:00",
+        "풍향(deg)": "50.5",
+        "풍속(m/s)": ".5"
+      },
+      "sourceRow": 10081,
+      "sourceFile": "matrix/data/source/user-upload/OBS_ASOS_MI_20261006125115.csv",
+      "qcStatus": "not_acquired"
+    },
+    "reason": "outside-target-day"
+  },
+  {
+    "record": {
+      "stationId": "248",
+      "timestamp": "2024-10-07T00:00:00+09:00",
+      "directionFromDeg": 278.1,
+      "speedMps": 0.7,
+      "rawValues": {
+        "지점": "248",
+        "지점명": "장수",
+        "일시": "2024-10-07 00:00",
+        "풍향(deg)": "278.1",
+        "풍속(m/s)": ".7"
+      },
+      "sourceRow": 11521,
+      "sourceFile": "matrix/data/source/user-upload/OBS_ASOS_MI_20261006125115.csv",
+      "qcStatus": "not_acquired"
+    },
+    "reason": "outside-target-day"
+  },
+  {
+    "record": {
+      "stationId": "251",
+      "timestamp": "2024-10-07T00:00:00+09:00",
+      "directionFromDeg": 132.3,
+      "speedMps": 0.0,
+      "rawValues": {
+        "지점": "251",
+        "지점명": "고창군",
+        "일시": "2024-10-07 00:00",
+        "풍향(deg)": "132.3",
+        "풍속(m/s)": "0"
+      },
+      "sourceRow": 12961,
+      "sourceFile": "matrix/data/source/user-upload/OBS_ASOS_MI_20261006125115.csv",
+      "qcStatus": "not_acquired"
+    },
+    "reason": "outside-target-day"
+  },
+  {
+    "record": {
+      "stationId": "254",
+      "timestamp": "2024-10-07T00:00:00+09:00",
+      "directionFromDeg": 87.2,
+      "speedMps": 0.0,
+      "rawValues": {
+        "지점": "254",
+        "지점명": "순창군",
+        "일시": "2024-10-07 00:00",
+        "풍향(deg)": "87.2",
+        "풍속(m/s)": "0"
+      },
+      "sourceRow": 14401,
+      "sourceFile": "matrix/data/source/user-upload/OBS_ASOS_MI_20261006125115.csv",
+      "qcStatus": "not_acquired"
+    },
+    "reason": "outside-target-day"
+  }
+]

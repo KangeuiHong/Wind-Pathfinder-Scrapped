@@ -1,0 +1,14 @@
+{
+  "schema": "wind-public-release-exclusions/1",
+  "date": "2026-10-06",
+  "excludedFiles": [
+    {
+      "path": "matrix/data/source/raw/jeonju-20241006-wind-only-public-preview.html",
+      "sha256": "33089fdfb85f6e9f5cb81a73ca9df759d9d003ab4a5cadb78c25a8488998fde0",
+      "reason": "Portal HTML capture contains session URL identifiers, login forms and tracker scripts; omitted from the public package. Original capture remains in the private historical archive.",
+      "runtimeRequired": false,
+      "provenancePolicy": "Existing rawFile/rawFiles references and source hashes remain unchanged as historical provenance; they do not mean the excluded file is bundled. Normalized preview CSV/JSON and actual uploaded observation CSV are retained.",
+      "officialSourceUrl": "https://data.kma.go.kr/data/grnd/selectAsosRltmList.do?pgmNo=36"
+    }
+  ]
+}
